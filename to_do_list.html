@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study To-Do List</title>
+
+    <link rel="stylesheet" href="to_do_list.css">
+</head>
+
+<body>
+
+    <div class="todo-container">
+
+        <h1>My To-Do List</h1>
+        <p class="subtitle">Organize your tasks and track your time!</p>
+
+        <div class="input-section">
+
+            <div class="input-group">
+                <label for="dateInput">Date</label>
+                <input type="date" id="dateInput">
+            </div>
+
+            <div class="input-group">
+                <label for="taskInput">Task</label>
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="e.g. Study JavaScript"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="durationInput">Duration</label>
+                <input
+                    type="text"
+                    id="durationInput"
+                    placeholder="e.g. 5 hours"
+                >
+            </div>
+
+        </div>
+
+        <button id="addTaskBtn">Add Task</button>
+
+        <div id="taskList" class="task-list"></div>
+
+    </div>
+
+    <script src="to_do_list.js"></script>
+
+</body>
+</html>
